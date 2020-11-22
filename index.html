@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <header class="header clipIt">
+    <header class="header">
       <nav>
         <div class="logo">
           <img src="/Static/images/logo.png" alt="Logo">
@@ -30,7 +30,22 @@
       <div> 
     </header>
     
-    <section></section>
+    <section class="ageInDays">
+      <div class="row heading">
+        <h2>Your Age in Days</h2>
+      </div>
+      <div class="row buttons">
+        <div class="buttonClick">
+          <a href="#" onclick="generateAgeInDays()">Click</a>
+        </div>
+        <div class="buttonReset">
+          <a href="#" onclick="ageInDaysReset()">Reset</a>
+        </div>
+        <div class="clearfix"></div>  
+      </div>
+      <div class="row" id="ageInDaysResult">
+      </div>  
+    </section>
 
     <script src="Static/javascript.js"></script>
   </body>
