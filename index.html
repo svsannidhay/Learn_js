@@ -36,15 +36,24 @@
       </div>
       <div class="row buttons">
         <div class="buttonClick">
-          <a href="#" onclick="generateAgeInDays()">Click</a>
+          <a href="#" onclick="generateAgeInDays();event.preventDefault();">Click</a>
         </div>
         <div class="buttonReset">
-          <a href="#" onclick="ageInDaysReset()">Reset</a>
+          <a href="#" onclick="ageInDaysReset();event.preventDefault();">Reset</a>
         </div>
         <div class="clearfix"></div>  
       </div>
       <div class="row" id="ageInDaysResult">
       </div>  
+    </section>
+
+    <section class="imageGenerator" id = "imageGenerator">
+      <div class="row heading">
+          <h2>Image generator</h2>
+          <div class="buttonGenerate">
+          <a href="#" onclick="generateImage();event.preventDefault();">Generate</a>
+          <div>
+      </div>   
     </section>
 
     <script src="Static/javascript.js"></script>

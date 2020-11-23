@@ -98,10 +98,10 @@ header .mainText{
 }
 
 /*//////////////////////////////////////////////////////////////////////*/
-/*-----------------SECTION AGE IN DAYS-------------------------------------- */
+/*-----------------SECTION AGE IN DAYS--------------------------------- */
 /*//////////////////////////////////////////////////////////////////////*/
 .ageInDays{
-  padding:30px 0 40px 0;
+  padding:50px 0 200px 0;
   background-color: #fffef5;
 }
 .ageInDays .heading h2{
@@ -120,7 +120,7 @@ header .mainText{
   background-color: #CCC614;
 }
 .ageInDays .buttons{
-  margin-top: 50px;
+  margin-top: -15px;
 }
 .ageInDays .buttonClick{
   float:left;
@@ -182,4 +182,56 @@ header .mainText{
   width: 450px;
   margin-top: 15px;
   background-color: #CCC614;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+/*-----------------SECTION IMAGE GENERATOR----------------------------- */
+/*//////////////////////////////////////////////////////////////////////*/
+
+.imageGenerator{
+  padding:50px 0 50px 0;
+}
+.imageGenerator .heading h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 170%;
+  font-weight: 400;
+}
+.imageGenerator .heading h2:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 1200px;
+  margin-top: 45px;
+  background-color: #CCC614;
+}
+
+.imageGenerator .buttonGenerate {
+  text-align: center;
+  margin-top: -15px;
+  margin-bottom:40px;
+}
+
+.imageGenerator .buttonGenerate a:link,
+.imageGenerator .buttonGenerate a:visited {
+  text-decoration: none;
+  color: rgb(12, 12, 12);
+  padding: 10px 40px;
+  text-transform: uppercase;
+  border: 2px solid #DFD816;
+  background-color: #EBE533;
+  border-radius: 40px;
+  transition: border 0.3s, background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 2px 5px 10px #555;
+}
+
+.imageGenerator .buttonGenerate a:hover,
+.imageGenerator .buttonGenerate a:active {
+  border: 2px solid #A7A211;
+  background-color: #E9E220;
+  box-shadow: 2px 5px 10px #827E0D;
+}
+.imageContainer img{
+  width:100%;
 }
