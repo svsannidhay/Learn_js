@@ -232,6 +232,18 @@ header .mainText{
   background-color: #E9E220;
   box-shadow: 2px 5px 10px #827E0D;
 }
+.imageContainer {
+  background-color: #5c5a2c;
+  overflow: hidden;
+}
 .imageContainer img{
   width:100%;
+  height:auto;
+  opacity: 0.7;
+  transform: scale(1.35);
+  transition: transform 0.3s, opacity 0.3s;
+}
+.imageContainer img:hover{
+  opacity: 1;
+  transform: scale(1);
 }

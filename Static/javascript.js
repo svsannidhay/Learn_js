@@ -11,7 +11,7 @@ function generateAgeInDays() {
 function ageInDaysReset() {
   document.getElementById("ageDays").remove();
 }
-
+//Image Generator
 function createColumnWithImage(){
   let col = document.createElement('div');
   col.setAttribute("class","col span-1-of-4 imageContainer");
