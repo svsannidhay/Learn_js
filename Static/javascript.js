@@ -3,7 +3,7 @@ function generateAgeInDays() {
   let years = prompt("Hey vro , please enter your birth year .");
   let days = (2020 - years) * 365;
   let h2 = document.createElement("h2");
-  var text = document.createTextNode("Your are " + days + " days old");
+  var text = document.createTextNode("You are " + days + " days old");
   h2.setAttribute("id", "ageDays");
   h2.appendChild(text);
   document.getElementById("ageInDaysResult").appendChild(h2);
@@ -26,10 +26,12 @@ var countgenerate = 0;
 var lastrow = -1;
 function generateImage(){
   countgenerate++;
-  let lastRowNo = Math.floor(countgenerate/5);
+  let lastRowNo = Math.floor((countgenerate-1)/4);
   if( (lastrow!= -1)  && ((countgenerate-1) % 4 !=0) ){
     document.getElementById("rowno"+ lastRowNo).remove();
   }
+  console.log(countgenerate);
+  console.log(lastRowNo);
   let row = document.createElement("div");
   row.setAttribute("class","row imageRow");
   row.setAttribute("id", "rowno" + lastRowNo);
@@ -42,3 +44,4 @@ function generateImage(){
   lastrow = lastRowNo;
   document.getElementById("imageGenerator").appendChild(row);
 }
+

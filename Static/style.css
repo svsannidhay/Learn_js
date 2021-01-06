@@ -103,6 +103,7 @@ header .mainText{
 .ageInDays{
   padding:50px 0 200px 0;
   background-color: #fffef5;
+  box-shadow: 5px 5px 10px #7a7a7a;
 }
 .ageInDays .heading h2{
   text-align: center;
@@ -134,7 +135,6 @@ header .mainText{
   text-transform: uppercase;
   border: 2px solid #DFD816;
   background-color: #EBE533;
-  border-radius: 40px;
   transition: border 0.3s , background-color 0.3s,box-shadow 0.3s;
   box-shadow: 2px 5px 10px #555;
 }
@@ -152,7 +152,6 @@ header .mainText{
   text-transform: uppercase;
   border: 2px solid #DFD816;
   background-color: #EBE533;
-  border-radius: 40px;
   transition: border 0.3s, background-color 0.3s,box-shadow 0.3s;
   box-shadow: 2px 5px 10px #555;
 }
@@ -221,7 +220,6 @@ header .mainText{
   text-transform: uppercase;
   border: 2px solid #DFD816;
   background-color: #EBE533;
-  border-radius: 40px;
   transition: border 0.3s, background-color 0.3s, box-shadow 0.3s;
   box-shadow: 2px 5px 10px #555;
 }
@@ -246,4 +244,37 @@ header .mainText{
 .imageContainer img:hover{
   opacity: 1;
   transform: scale(1);
+}
+/*//////////////////////////////////////////////////////////////////////*/
+/*----------------------------------CHARTS----------------------------- */
+/*//////////////////////////////////////////////////////////////////////*/
+canvas{
+  width:800px;
+  height:400px;
+}
+#putCanvas{
+  text-align: center;
+}
+.unipolarNrz .buttonGenerateCavas{
+  text-align: center;
+}
+.unipolarNrz .buttonGenerateCavas a:link,
+.unipolarNrz .buttonGenerateCavas a:visited{
+  text-decoration: none;
+  color: rgb(12, 12, 12);
+  padding: 10px 40px;
+  text-transform: uppercase;
+  border: 2px solid #DFD816;
+  background-color: #EBE533;
+  border-radius: 40px;
+  transition: border 0.3s,
+  background-color 0.3s,
+  box-shadow 0.3s;
+  box-shadow: 2px 5px 10px #555;
+}
+.unipolarNrz .buttonGenerateCavas a:hover,
+.unipolarNrz .buttonGenerateCavas a:active {
+  border: 2px solid #A7A211;
+  background-color: #E9E220;
+  box-shadow: 2px 5px 10px #827E0D;
 }
